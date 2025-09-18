@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.quac": "quac",
+        "cassert": "cpp"
+    }
+}
