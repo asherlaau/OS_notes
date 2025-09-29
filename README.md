@@ -61,3 +61,6 @@ MMU helps to converts the virtual address to phy one, CR3 is a register that sto
 │  - Address 0x00205000: Page Table                      │
 │  - Address 0x00308678: Actual Data (0x42)              │
 └─────────────────────────────────────────────────────────┘
+
+
+# Share memory (add later)
