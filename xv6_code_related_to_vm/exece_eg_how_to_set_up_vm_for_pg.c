@@ -331,3 +331,22 @@ int main(int argc, char **argv) {
     
     // This is virtual memory magic!
 }
+
+
+
+/*
+
+the string we push to the stack, is 
+dynmic length, we dont know where it starts, 
+but we have termintor, so after pushing the string arg, 
+we also need to push the sp where the string starts from, 
+so user process can index the argv, 
+so the whole proceedure be like exec receive the args and program name, 
+we set up the memoory layout, for the stack indenpendent handle it, 
+we reserve guard page space and start we init the stack, the argv we 
+receive need to pass to the user new process B, so we copy the argv 
+to the process B physical address, and also mark the va of this 
+physical address to ustack, after copying everything, we copy the 
+ustack va to the process Bstack upon it, 
+so later we can use *argv[i] to get the i's arguement 
+*/
